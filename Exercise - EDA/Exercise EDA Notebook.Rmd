@@ -5,7 +5,7 @@ output:
   html_notebook: default
 ---
   
-This is the first exercise from Doing Data Science by Cathy O'Neil and Rachel Schutt. The goal of this exercise is to do exploratory data analysis on data from the New York Times
+This is the first exercise from Doing Data Science by Cathy O'Neil and Rachel Schutt. The goal of this exercise is to do exploratory data analysis on data from the New York Times.
 
 #### Load libraries
 ```{r load_libraries, message = FALSE}
@@ -254,9 +254,9 @@ df_all %>%
 ```
 
 ### 4. Describe and interpret any patterns you find
-Some general paterns:
+Some general patterns:
 
 * The young (< 18) and the elderly (> 55) are more engaged
-* Engagment has a weekly trend, spiking on the 6th day of the month and then every week later. Maybe this is a spike on the weekend? Would have to know more about the month in which the data was captured.
+* Engagement has a weekly trend, spiking on the 6th day of the month and then every week later. Maybe this is a spike on the weekend? Would have to know more about the month in which the data was captured.
 * Signed in users are more like to engage with content
-*Women are more likelt to engage with content
+*Women are more likely to engage with content

@@ -1,0 +1,38 @@
+---
+title: "Exercise - RealDirect Data Strategy"
+output: html_notebook
+---
+
+This is the second exercise from Doing Data Science by Cathy O'Neil and Rachel Schutt. The goal of this exercise is to come up with a data strategy for RealDirect, a platform for buyers and sellers to manage their home sale or purchase process.
+
+#### Load libraries
+```{r load_libraries, message = FALSE}
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+library(scales)
+library(readxl)
+```
+
+#### Import data
+```{r, cache = TRUE}
+setwd("~/R/Doing Data Science/Exercise - RealDirect Data Strategy/dds_ch2_rollingsales") 
+rollingsales_manhattan <- read_excel("rollingsales_manhattan.xls", sheet = "Manhattan", skip = 4)
+head(rollingsales_manhattan)
+```
+
+### 1. Explore the existing website, thinking about how buyers and sellers would navigate through it, and how the webste is structured/modeled.
+#### What data would you advise the engineers log and what would your ideal datasets look like?
+#### How would data be used for reporting and monitoring product usage?
+#### How would data be built back into the product/website?
+
+### 2. Analyze auxiliary data to help gain intuition about this market. Start with Manhattan August, 2012 - August 2013.
+
+#### First challenge: load in and clean up the data. Next, confudct exploratory data analysis in order to find out where there are outliers or missing values, decide how you will treat them, mae sure the dates are formatted correctly, make sure values you think are numerical are bering treated as such, etc.
+
+#### Once the data is in good shape, confuct exploratory data analysis to visualize and make comparisons (i) accross neighborhoods, and (ii) across time. If you have time, start looking for meaningful patterns in this dataset.
+
+### 3. Summarize your findings in a brief report aimed at the CEO.
+
+### 4. Being the "data scientist" often involves speaking to people who aren't also data scientists, so it would be ideal to have a set of communication strategies for getting to the information you need about the data. Can you think of any other people you should talk to?
+
